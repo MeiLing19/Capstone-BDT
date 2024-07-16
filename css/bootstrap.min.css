@@ -82,9 +82,9 @@ h6,
 .h6 {
   margin-top: -2.2rem;
   margin-bottom: 0.5rem;
-  margin-right: -40rem;
+  /* margin-right: -40rem; */
   font-family: "Nunito", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   color: #2c3e50;
 }
@@ -456,13 +456,13 @@ progress {
   }
 }
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 .display-4 {
@@ -1174,7 +1174,8 @@ progress {
   }
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333%;
+    width: 40%;
+    text-align: center;
   }
   .col-lg-5 {
     flex: 0 0 auto;
@@ -1190,7 +1191,7 @@ progress {
   }
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66667%;
+    width: 60%;
   }
   .col-lg-9 {
     flex: 0 0 auto;
@@ -6367,7 +6368,7 @@ fieldset:disabled .btn {
   margin-bottom: 1rem !important;
 }
 .my-4 {
-  margin-top: 1.5rem !important;
+  margin-top: 2rem !important;
   margin-bottom: 1.5rem !important;
 }
 .my-5 {
@@ -6433,6 +6434,8 @@ fieldset:disabled .btn {
   margin-bottom: 1rem !important;
 }
 .mb-4 {
+  width: 100%;
+  margin-top: 15px;
   margin-bottom: 1.5rem !important;
 }
 .mb-5 {
@@ -6640,7 +6643,7 @@ fieldset:disabled .btn {
   padding-bottom: 1.5rem !important;
 }
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
   padding-bottom: 3rem !important;
 }
 .pt-0 {

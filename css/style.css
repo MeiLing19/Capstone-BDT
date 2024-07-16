@@ -105,6 +105,75 @@
   max-height: 45px;
 }
 
+
+/* Trending Section */
+.trending-section {
+  padding: 2rem 0;
+  background-color: var(--light);
+}
+
+.trending-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--fw-medium);
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  color: #666;
+}
+
+.card-text small {
+  font-size: 12px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .trending-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .trending-cards .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trending-cards .card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
 @media (max-width: 991.98px) {
   .sticky-top.navbar-light {
     position: relative;
@@ -120,7 +189,7 @@
   .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 10px 0;
     margin-left: 0;
-    color: var(--dark) !important;
+    /* color: var(--dark) !important; */
   }
 
   .navbar-light .navbar-brand img {
@@ -176,6 +245,75 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Form Section styles */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-group span {
+  color: red;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
 }
 
 /*** Section Title ***/
